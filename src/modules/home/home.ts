@@ -1,15 +1,12 @@
-import { button } from '../../components/button'
 import styles from './home.module.scss'
 
 export const Home = () => {
-    const title = document.createElement('h1')
+    const title: HTMLHeadingElement = document.createElement('h1')
     const homeRoot = document.getElementById('homepage')
-    const aboutUsButton = button('About us', './about.html')
 
-    title.textContent = 'Hello Pro!'
     title.classList.add('color-title')
+    title.textContent = 'Hello Pro!'
+    
     homeRoot?.classList.add(styles['wrapper'])
-    //
     homeRoot?.appendChild(title)
-    homeRoot?.appendChild(aboutUsButton)
 }

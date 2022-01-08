@@ -12,6 +12,7 @@ const config = {
     devtool: 'inline-source-map',
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
+        fallback: { path: require.resolve('path-browserify') },
     },
     output: {
         filename: '[name].bundle.js',
@@ -20,19 +21,14 @@ const config = {
     },
     devServer: {
         static: './dist',
-        port: 8887,
+        port: 8881,
     },
     plugins: [
         new HtmlWebpackPlugin({
             // title: 'Development',
             filename: 'index.html',
-            template: './src/index.html',
-        }),
-        new HtmlWebpackPlugin({
-            title: 'Development',
-            filename: 'about.html',
-            template: './src/modules/about-us/about.html',
-            // chunks: [],
+            template: `${path.resolve(__dirname, 'src')}/index.html`,
+            favicon: `${path.resolve(__dirname, 'src')}/favicon.ico`,
         }),
     ],
 
