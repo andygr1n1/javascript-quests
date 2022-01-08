@@ -5,8 +5,8 @@ export const Home = () => {
     const homeRoot = document.getElementById('homepage')
 
     title.classList.add('color-title')
-    title.textContent = 'Hello Pro!'
-    
+    title.textContent = 'Hello JS Quests!'
+
     homeRoot?.classList.add(styles['wrapper'])
     homeRoot?.appendChild(title)
 }
