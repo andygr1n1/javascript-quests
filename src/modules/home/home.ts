@@ -1,3 +1,4 @@
+import { get_initials_from_name } from '../../functions/get_initials_from_name'
 import styles from './home.module.scss'
 
 export const Home = () => {
@@ -5,8 +6,10 @@ export const Home = () => {
     const homeRoot = document.getElementById('homepage')
 
     title.classList.add('color-title')
-    title.textContent = 'Hello JS Quests!'
+    title.textContent = 'Initials quest!'
 
     homeRoot?.classList.add(styles['wrapper'])
     homeRoot?.appendChild(title)
+
+    get_initials_from_name()
 }
