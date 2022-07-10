@@ -12,3 +12,10 @@ export const get_initials_from_name = () => {
     getInitials('Elon mask')
     getInitials('Eleonora mary Ruzvelt')
 }
+
+
+export const getInitials = (name: string) =>
+    name
+        .split(' ')
+        .map((name) => name.substring(0, 1).toUpperCase())
+        .join('.')
