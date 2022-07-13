@@ -1,3 +1,4 @@
+import { getSum } from '../../functions/getSum'
 import styles from './home.module.scss'
 
 export const Home = () => {
@@ -9,4 +10,6 @@ export const Home = () => {
 
     homeRoot?.classList.add(styles['wrapper'])
     homeRoot?.appendChild(title)
+
+    getSum()
 }
