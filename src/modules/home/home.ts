@@ -1,7 +1,8 @@
 // import { getSum } from '../../functions/getSum'
 // import { minMaxNumber } from '../../functions/minmaxnumber'
 // import { experimentClosure } from '../../functions/experimentClosure'
-import { indexOfUppercase } from '../../functions/indexOfUppercase'
+// import { indexOfUppercase } from '../../functions/indexOfUppercase'
+import { restOperator } from '../../functions/restOperator'
 import styles from './home.module.scss'
 
 export const Home = () => {
@@ -17,5 +18,6 @@ export const Home = () => {
     // getSum()
     // minMaxNumber()
     // experimentClosure()
-    indexOfUppercase()
+    // indexOfUppercase()
+    restOperator()
 }
