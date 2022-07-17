@@ -1,4 +1,7 @@
-import { getSum } from '../../functions/getSum'
+// import { getSum } from '../../functions/getSum'
+// import { minMaxNumber } from '../../functions/minmaxnumber'
+// import { experimentClosure } from '../../functions/experimentClosure'
+import { indexOfUppercase } from '../../functions/indexOfUppercase'
 import styles from './home.module.scss'
 
 export const Home = () => {
@@ -11,5 +14,8 @@ export const Home = () => {
     homeRoot?.classList.add(styles['wrapper'])
     homeRoot?.appendChild(title)
 
-    getSum()
+    // getSum()
+    // minMaxNumber()
+    // experimentClosure()
+    indexOfUppercase()
 }
