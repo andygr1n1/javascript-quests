@@ -2,7 +2,8 @@
 // import { minMaxNumber } from '../../functions/minmaxnumber'
 // import { experimentClosure } from '../../functions/experimentClosure'
 // import { indexOfUppercase } from '../../functions/indexOfUppercase'
-import { restOperator } from '../../functions/restOperator'
+import { closure } from '../../functions/closure'
+// import { restOperator } from '../../functions/restOperator'
 import styles from './home.module.scss'
 
 export const Home = () => {
@@ -19,5 +20,6 @@ export const Home = () => {
     // minMaxNumber()
     // experimentClosure()
     // indexOfUppercase()
-    restOperator()
+    // restOperator()
+    closure()
 }
